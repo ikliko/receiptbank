@@ -1,0 +1,103 @@
+.fibonacci__title {
+    text-align: center;
+}
+
+.fibonacci__table {
+    border: 1px solid black;
+    width:100%;
+    margin-bottom: 20px;
+}
+
+.fibonacci__table-cell {
+    padding: 15px;
+    text-align: center;
+}
+
+.fibonacci__table,
+.fibonacci__table-cell {
+    border-collapse: collapse;
+}
+
+.fibonacci__table-row:nth-child(even) {
+    background-color: #cfcfcf;
+}
+
+.fibonacci__table-row:nth-child(odd) {
+    background-color: #fcfcfc;
+}
+
+.alert {
+    padding: 10px 15px;
+    border-left: 3px solid #000000;
+    border-bottom: 3px solid #000000;
+    border-top: 1px solid #000000;
+    border-right: 1px solid #000000;
+    border-radius: 10px;
+    background: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bolder;
+    position: fixed;
+    right: 15px;
+    width: 260px;
+}
+
+.alert--success {
+    border-color:  #006600;
+    background: #00cd00;
+    color: #e5fae5;
+}
+
+.alert--error {
+    border-color: #990000;
+    background: #ff0101;
+    color: #ffcccc;
+}
+
+.alert__close-btn {
+    border: none;
+    background-color: transparent;
+    color: inherit;
+    font-style: normal;
+    font-weight: bold;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    outline: none;
+}
+
+.alert__close-btn:hover {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.fibonacci__form {
+    width: 300px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fibonacci__form-input {
+    border-radius: 5px;
+}
+
+.btn {
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.fibonacci__save-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0B12E2;
+    color: #ffffff;
+}
+
+.fibonacci__title-separator {
+    width: 60%;
+    margin-bottom: 20px;
+}

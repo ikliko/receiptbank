@@ -1,0 +1,59 @@
+<% if response %>
+  <div class="alert alert--<%= response[:type] %>">
+    <%= response[:message] %>
+
+    <button class="alert__close-btn">X</button>
+  </div>  
+<% end %>
+
+<h1 class="fibonacci__title">Fibonacci multiplication table</h1>
+
+<hr class="fibonacci__title-separator" />
+
+<form action="/fibonacci" 
+      class="fibonacci__form"
+      method="get">
+  <input type="text"
+         class="fibonacci__form-input"
+         value="<%= size %>"
+         name="n"/>
+
+    <button type="submit"
+            class="btn">
+      Generate
+    </button>
+</form>
+
+
+<% if table %>
+  <!--- Render table here -->
+  
+  <table class="fibonacci__table">
+    <% table.each do |row| %>
+      <tr class="fibonacci__table-row">
+        <% row.each do |item| %>
+          <td class="fibonacci__table-cell">
+            <%= item %>
+          </td>
+        <%end%>
+      </tr>
+    <% end %>
+  </table>
+
+  <% if !saved %>
+    <form action="/fibonacci" 
+          method="post">
+      <input type="hidden"
+             class="fibonacci__form-input"
+             value="<%= size %>"
+             name="n"/>
+
+      <button type="submit" 
+              class="btn fibonacci__save-btn">
+                Save Table!
+        </button>
+    </form>
+
+  <% end %>
+<% end %>
+
